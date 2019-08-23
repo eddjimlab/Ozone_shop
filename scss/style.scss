@@ -22,6 +22,14 @@ button {
 	}
 }
 
+.catalog-list li.active {
+		color: red;
+	}
+.filter-title h5{
+	color: blueviolet;
+	font-weight: bold;
+}
+
 .btn {
 	display: inline-flex;
 	width: auto;
