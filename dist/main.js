@@ -142,7 +142,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return getData; });\nfunction getData() {\n  const goodsWrapper = document.querySelector(\".goods\");\n  return fetch(\"../db/db.json\")\n    .then(res => {\n      if (res.ok) {\n        return res.json();\n      } else {\n        throw new Error(res.status);\n      }\n    })\n    .then(data => {\n      return data;\n    })\n    .catch(err => {\n      console.warn(err);\n      goodsWrapper.innerHTML =\n        '<div style=\"color: red; font-size: 30px\">Упс, что -то пошло не так ...</div>';\n    });\n}\n\n\n//# sourceURL=webpack:///./src/modules/getData.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return getData; });\nfunction getData() {\n  const goodsWrapper = document.querySelector(\".goods\");\n  return fetch(\"../../db/db.json\")\n    .then(res => {\n      if (res.ok) {\n        return res.json();\n      } else {\n        throw new Error(res.status);\n      }\n    })\n    .then(data => {\n      return data;\n    })\n    .catch(err => {\n      console.warn(err);\n      goodsWrapper.innerHTML =\n        '<div style=\"color: red; font-size: 30px\">Упс, что -то пошло не так ...</div>';\n    });\n}\n\n\n//# sourceURL=webpack:///./src/modules/getData.js?");
 
 /***/ }),
 
